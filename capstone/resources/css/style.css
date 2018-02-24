@@ -1,0 +1,500 @@
+left-panel/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular-cyrillic-ext-mem8YaGs126MiZpBA-UFWJ0bbck.woff2') format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular-cyrillic-mem8YaGs126MiZpBA-UFUZ0bbck.woff2') format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular-greek-ext-mem8YaGs126MiZpBA-UFWZ0bbck.woff2') format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular-greek-mem8YaGs126MiZpBA-UFVp0bbck.woff2') format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular-vietnamese-mem8YaGs126MiZpBA-UFWp0bbck.woff2') format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular-latin-ext-mem8YaGs126MiZpBA-UFW50bbck.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./fonts/OpenSans-Regular-latin-mem8YaGs126MiZpBA-UFVZ0b.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html{
+	font-size:16px;
+	font-family: 'Open Sans',San-serif;
+	background-color:WhiteSmoke;
+}
+body{
+	margin:0;
+	padding:0;
+	border:1px solid lightgray;
+}
+header{
+	position:fixed; /*to stop scrolling up*/
+	margin:0;
+	vertical-align:center;
+	z-index:9000;
+	background-color:white;
+	width: 100%;
+}
+header .content {
+  display: flex;
+  align-items: center; /*center the header item vertically*/
+  justify-content: space-between; /*align items horizontally with no space at ends*/
+  height:2rem;
+	margin:1rem 1.5rem;
+
+}
+header .content .head_left{
+	display:flex;
+	align-items: center; /*align image and h2*/
+}
+header .content .head_left h2{
+	font-size: 1.2rem;
+
+}
+
+.mobile-header-menu{
+  display:none;
+}
+header nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 1.5rem;
+  list-style:none;
+}
+nav li a {
+  text-decoration:none;
+  color:grey;
+  font-size:0.8rem;
+}
+.light_gray{
+	color:rgb(180,180,180);
+}
+.bg_lightgray{
+	/*background-color: rgb(162,171,143);*/
+  background-color: #ABABAE;
+}
+
+.bg_lighter_gray{
+	/*background-color: rgb(162,171,143);*/
+  background-color: rgb(215,215,215);
+}
+
+.text_bold_big_letter{
+  font-size: 2.5rem;
+	font-bold:900;
+  text-shadow: 0px 2px, 2px 0px, 2px 2px;
+  letter-spacing: 0.15rem;
+}
+/* banner section */
+.banner{
+	top:4rem;
+	left:0;
+	position:relative;
+	width:auto;
+	background-color:rgb(180,180,180);
+	display:flex;
+
+}
+.banner img{
+ width:60%;
+ height:40%;
+ margin:2rem 1.5rem;
+}
+
+.banner .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:30%;
+	text-align: left;
+	margin:1.5rem;
+
+}
+
+.banner .text h2{
+
+}
+
+.banner .text p{
+	font-size: 1.5rem;
+}
+
+.banner .text a{
+	color:white;
+	background-color:rgb(95,95,95);
+	padding:1.5rem 1rem;
+	text-decoration:none;
+	text-align: center;
+	font-size:1.3rem;
+}
+/* banner section */
+
+.information-main{
+	display:flex;
+	margin: 0;
+	padding: 0;
+	height: 65rem;
+	overflow:hidden;
+}
+.information-main .left-panel{
+	padding: 5rem 1.5rem;
+	border:1px solid lightgray;
+	width:66%;
+	margin: 0;
+}
+.information-main .left-panel img{
+	width: 100%;
+}
+.information-main .left-panel h2{
+	margin: 2rem 0;
+}
+.information-main .left-panel p{
+	margin: 1.5rem 0;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+}
+
+.information-main .right-panel {
+	padding: 4rem 0;
+	width: 41%;
+}
+
+
+.information-main .right-panel .details {
+	display:flex;
+	padding:  1rem 1rem;
+	border:1px solid lightgray;
+
+}
+.information-main .right-panel .details {
+	width: 100%;
+}
+.information-main .right-panel .details .text {
+	width:40%;
+}
+
+.information-main .right-panel .details img{
+	width: 25%;
+  height: 100%;
+	margin-right: 2rem;
+}
+.information-main .right-panel .details a{
+	text-decoration: none;
+	color:DodgerBlue;
+	font-size:1.2rem;
+}
+
+/* end of information-main */
+
+.start-learning{
+	background-color: lightgray;
+	height: 40%;
+  border:1px solid lightgray;
+}
+
+.start-learning .heading{
+	display:flex;
+	justify-content: center;
+}
+
+.start-learning .heading h3{
+	margin:2rem auto;
+}
+
+.start-learning .course_collection {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 0 3rem;
+}
+
+.start-learning .course_collection .course_details{
+  width: 30%;
+  margin:1rem;
+  padding:0;
+  background-color: white;
+}
+
+.start-learning .course_collection .course_details img{
+  width: 100%;
+}
+
+.start-learning .course_collection .course_details h4,
+.start-learning .course_collection .course_details h5 {
+  padding: 0.3rem 0.5rem;
+  color:gray;
+}
+
+.start-learning .course_collection .course_details p {
+  padding: 0.1rem 0.3rem;
+  color:gray;
+}
+
+.thesis-exhibit{
+  background-color:WhiteSmoke ;
+	height: 40%;
+  border:1px solid lightgray;
+}
+.thesis-exhibit .heading{
+	display:flex;
+	justify-content: center;
+}
+
+.thesis-exhibit .heading h3{
+	margin:2rem auto;
+}
+
+
+.thesis-exhibit  .details {
+  display:flex;
+  align-items:flex-start;
+  padding: 1.5rem;
+}
+
+.thesis-exhibit  .details .left-panel{
+  width:60%;
+}
+
+
+.thesis-exhibit  .details .left-panel p{
+
+  width:90%;
+}
+
+.thesis-exhibit  .details .left-panel video{
+  width:90%;
+  height: 100%;
+}
+
+.thesis-exhibit  .details .right-panel{
+  width:40%;
+  height: 100%;
+}
+
+.thesis-exhibit  .details .right-panel .row{
+  display: flex;
+  align-items: center;
+}
+
+.thesis-exhibit  .details .right-panel img{
+  width:50%;
+  height: 50%;
+  padding: 1rem;
+  width: 75%;
+	margin: 1rem auto;
+
+}
+
+
+.thesis-exhibit  .details .right-panel .row .text{
+  padding:  1rem 2rem;
+  width:50%;
+}
+
+.footer{
+
+    display: flex;
+    font-size: 0.9rem;
+   justify-content: space-between;
+   padding:1.5rem 2rem 3rem 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+html{
+  font-size:12px;
+}
+  .desktop{
+    display:none;
+  }
+
+  .text_bold_big_letter{
+    font-size:1.5rem;
+  	font-bold:900;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    letter-spacing: 0.15rem;
+
+  }
+
+  .mobile-header-menu{
+    display:inline-block;
+    padding:2rem;
+  }
+
+  .banner{
+    background-color:rgb(199,199,199);
+    display:block;
+    height: auto;
+    padding:2.67rem 0  2rem 0;
+  }
+
+  .banner img{
+   display:block;
+   width:100%;
+   margin: 0;
+  }
+
+  .banner .text{
+  	display: block;
+  	width:100%;
+  	text-align: left;
+  	margin:0;
+  }
+
+  .banner .text p,
+  .banner .text h2{
+  	font-size: 1.5rem;
+    display: block;
+    margin:1rem 2rem;
+  }
+
+  .banner .text a{
+  	color:white;
+    display: block;
+  	background-color:rgb(150,150,150);
+  	padding:1.5rem;
+  	text-decoration:none;
+  	text-align: center;
+  	font-size:1.3rem;
+    width:80%;
+    margin:1rem auto;
+  }
+
+  .information-main{
+      display:block;
+      height:auto;
+  }
+
+  .information-main .left-panel{
+    display:none;
+  }
+  .information-main .right-panel{
+    width:100%;
+  }
+
+
+
+  .information-main .right-panel .details img{
+    display:block;
+    margin: 1rem auto;
+    width:75%;
+  }
+
+  .information-main .right-panel .details .text{
+    width:75%;
+    display:block;
+    margin:1rem 3rem;
+  }
+
+  .start-learning{
+    display:block;
+    background-color: white;
+    border:none;
+  }
+
+    .start-learning .course_collection .course_details img,
+    .start-learning .course_collection .course_details h5,
+    .start-learning .course_collection .course_details p
+    {
+      display:none;
+      margin:0;
+      padding: 0;
+      width:0rem;
+    }
+    .start-learning .course_collection {
+      display:block;
+      margin:0;
+      padding:0;
+      width:auto;
+    }
+    .start-learning .course_collection  .course_details{
+      display:block;
+      margin:0.7rem 0;
+      padding:0;
+      width:100%;
+    }
+
+    .start-learning .course_collection .course_details h4{
+        display:block;
+        padding:2rem 3rem;
+        background-color: rgb(230,230,230);
+        text-align: left;
+        width:20rem;
+        margin:0 auto;
+    }
+    .thesis-exhibit{
+      border:none;
+      background-color: white;
+    }
+
+    .thesis-exhibit .details .left-panel h3,
+    .thesis-exhibit .details .left-panel p,
+    .thesis-exhibit .details .right-panel{
+      display:none;
+    }
+    .thesis-exhibit .details{
+      display:block;
+      margin:0;
+      padding:0;
+    }
+    .thesis-exhibit .details .left-panel{
+      display:block;
+      margin:0;
+      padding:0;
+      width:100%;
+    }
+    .thesis-exhibit .details .left-panel video{
+      display:block;
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+
+    .footer{
+      border:none;
+      background-color: white;
+    }
+
+    .footer span{
+      font-size: 0.7rem;
+
+    }
+}
+/* end of medio query*/
